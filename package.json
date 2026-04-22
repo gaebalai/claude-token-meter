@@ -1,0 +1,41 @@
+{
+  "name": "claude-token-meter",
+  "version": "1.0.0",
+  "description": "Measure your monthly Claude Code token usage and see your position in the global distribution (cache_read excluded for fair comparison).",
+  "bin": {
+    "claude-token-meter": "./bin/cli.js"
+  },
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node bin/cli.js",
+    "test": "node bin/cli.js --log-dir ./test-fixtures",
+    "install:code": "node bin/install-claude-code.js",
+    "install:desktop": "node bin/install-claude-desktop.js",
+    "uninstall:code": "node bin/install-claude-code.js --uninstall"
+  },
+  "keywords": [
+    "claude",
+    "claude-code",
+    "anthropic",
+    "token",
+    "usage",
+    "meter",
+    "analytics"
+  ],
+  "author": "gaebalai",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {},
+  "files": [
+    "bin/",
+    "src/",
+    "README.md",
+    "LICENSE"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gaebalai/claude-token-meter"
+  }
+}
