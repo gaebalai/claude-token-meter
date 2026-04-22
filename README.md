@@ -38,7 +38,7 @@ npx claude-token-meter --log-dir ~/custom/claude/projects
 ## Skill로 설치하기
 
 `skill/` 폴더에는 이 도구를 Claude에 직접 "스킬"로 등록할 수 있는 Python 버전이 포함되어 있습니다.
-스킬로 등록하면 `/claude-token-meter` 같은 명시적 호출 없이도
+스킬로 등록하면 `/token-meter` 같은 명시적 호출 없이도
 **"내 Claude 사용량 측정해줘"** 같은 자연어 요청으로 발동됩니다.
 
 ### Claude Code (CLI)에 설치
@@ -57,7 +57,7 @@ node bin/install-claude-code.js --force
 npm run uninstall:code
 ```
 
-설치 위치: `~/.claude/skills/claude-token-meter/`
+설치 위치: `~/.claude/skills/token-meter/` (Claude 예약어 회피를 위해 스킬명은 `token-meter` 사용)
 설치 후 새 Claude Code 세션을 열면 스킬이 자동으로 로드됩니다.
 
 ### Claude Desktop 앱에 설치
@@ -65,7 +65,7 @@ npm run uninstall:code
 Claude Desktop은 스킬을 `.zip` 파일로 업로드하는 방식을 사용합니다.
 
 ```bash
-# 업로드용 zip 생성 (dist/claude-token-meter-skill.zip)
+# 업로드용 zip 생성 (dist/token-meter-skill.zip)
 npm run install:desktop
 
 # macOS에서 Finder로 zip 위치 바로 열기
@@ -76,7 +76,7 @@ node bin/install-claude-desktop.js --open
 
 1. Claude Desktop 앱 실행
 2. 설정(Settings) → **Capabilities** → **Skills**
-3. **Add Skill** 버튼 → `dist/claude-token-meter-skill.zip` 선택
+3. **Add Skill** 버튼 → `dist/token-meter-skill.zip` 선택
 4. 업로드 후 자연어로 사용량 측정 요청
 
 > **참고**: Claude Desktop에서 Skills 메뉴가 보이지 않으면 앱을 최신 버전으로 업데이트하거나

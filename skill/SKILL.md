@@ -1,5 +1,5 @@
 ---
-name: claude-token-meter
+name: token-meter
 description: Use this skill when the user wants to measure their monthly Claude Code token usage, calculate their position in the global distribution, or compare their usage against Anthropic's Max plan benchmarks. Triggers include phrases like "measure my Claude usage", "how many tokens did I use", "token meter", "Claude 사용량 측정", "내 토큰 몇 개 썼지", or when the user wants a fair apples-to-apples comparison that excludes cache_read tokens. Scans ~/.claude/projects/ JSONL logs and produces a percentile estimate against public data points.
 ---
 

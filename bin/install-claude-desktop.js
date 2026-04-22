@@ -17,7 +17,7 @@ const fsp = require('fs/promises');
 const path = require('path');
 const { spawnSync } = require('child_process');
 
-const SKILL_NAME = 'claude-token-meter';
+const SKILL_NAME = 'token-meter';
 const SRC_DIR = path.resolve(__dirname, '..', 'skill');
 const DIST_DIR = path.resolve(__dirname, '..', 'dist');
 const ZIP_PATH = path.join(DIST_DIR, `${SKILL_NAME}-skill.zip`);

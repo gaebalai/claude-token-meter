@@ -17,7 +17,7 @@ const fsp = require('fs/promises');
 const os = require('os');
 const path = require('path');
 
-const SKILL_NAME = 'claude-token-meter';
+const SKILL_NAME = 'token-meter';
 const SRC_DIR = path.resolve(__dirname, '..', 'skill');
 const DEST_ROOT = path.join(os.homedir(), '.claude', 'skills');
 const DEST_DIR = path.join(DEST_ROOT, SKILL_NAME);
